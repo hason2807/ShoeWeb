@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display swap&subset vietnamese"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="đăng_ký.html">
+    <link rel="stylesheet" href="assets/css/menu_and_product.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/main.js">
+    
+</head>
+<body> 
+    <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="path_to_your_logo_image" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-user" style="color: blue;"></i> Đăng ký</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-sign-in-alt" style="color: green;"></i> Đăng nhập</a>
+            </li>
+            <li class="nav-item">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng <span class="badge badge-primary">3</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <!-- Navigation Menu -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+        <div class="container">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sản phẩm
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Giày Nike</a>
+                  <a class="dropdown-item" href="#">Giày Sandal</a>
+                  <a class="dropdown-item" href="#">Giày Thể thao</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chi tiết sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <style>
+      .custom-navbar .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+      }
+      
+      .custom-navbar .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        text-align: center;
+      }
+      
+      .custom-navbar .navbar-brand a {
+        display: inline-block;
+        text-align: center;
+      }
+      
+      .custom-navbar .dropdown-menu {
+        text-align: center;
+      }
+      </style>
+  </header>
+  </header>
+  <!-- Thêm script JavaScript của Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- banner -->
+    <main>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="./assets/img/banner 2.jpg" style="width:100%" height="600">
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./assets/img/maxresdefault.jpg" style="width: 100%;" height="600">
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./assets/img/m" style="width:100%" height="600">
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            
+            <script>
+            // JavaScript code
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            </script>
+        </main>
+          <!--start slideshow_right-->
+        <div class="slideshow_right" >
+
+            <div class="menuevent">
+                <div class="event">
+                    <a href="#">
+                        <button class="button button1" onclick="" style="vertical-align:middle"><img class="middle" src="./assets/img/discount-code.png" width="10%">
+                            <span> Mã Giảm Giá</span>
+                        </button>
+                    </a>
+                    
+                    <a href="#">
+                        <button class="button button2" onclick="" style="vertical-align:middle"><img class="middle" src="./assets/img/flash_sales.png" width="10%">
+                            <span> Flash Sales 50%</span>
+                        </button>
+                    </a>
+
+                    <a href="#">
+                        <button class="button button3" onclick="" style="vertical-align:middle"><img class="middle" src="./assets/img/fire.png" width="10%">
+                            <span> HOT Nhất Tuần Qua</span>
+                        </button>
+                    </a>
+
+                    <a href="#">
+                        <button class="button button4" onclick="" style="vertical-align:middle"><img class="middle" src="./assets/img/gift.png" width="10%">
+                            <span> Tư Vấn Quà Tặng</span>
+                        </button>
+                    </a>           		
+                </div>                	
+            </div>
+        </div>
+         <!-- end slideshow_right-->
+       <section>
+        <div class="container">
+            <h1 style = "text-align: center;" >Danh sách sản phẩm</h1>
+            <div class="row" style = "padding-top: 4%;">
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="assets/img/giầy sandal.jpg" class="card-img-top" alt="Product 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Sản phẩm 1</h5>
+                    <p class="card-text">Mô tả sản phẩm 1.</p>
+                    <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="assets/img/giày nike.jpg" class="card-img-top" alt="Product 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Sản phẩm 2</h5>
+                    <p class="card-text">Mô tả sản phẩm 2.</p>
+                    <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="assets/img/anhthethao.jpg" class="card-img-top" alt="Product 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Sản phẩm 3</h5>
+                    <p class="card-text">Mô tả sản phẩm 3.</p>
+                    <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+       </section>
+      </section>
+      <div class="menu_and_product">
+        <section class="categoriesstyle="width:30%;background-color: beige;>
+            <div class="container">
+                <h2>Danh mục sản phẩm</h2>
+                <ul>
+                    <li><a href="#">Áo Câu Lạc Bộ</a></li>
+                    <li><a href="#">Áo Quốc Gia</a></li>
+                    <li><a href="#">Áo Không Logo</a></li>
+                    <li><a href="#">Áo Cute Anime</a></li>
+                    <li><a href="#">Áo Độc Lạ Đẹp</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="wrapper">
+            <br>
+				<a class="danhmuc"> Sản Phẩm Bạn Có Thể Quan Tâm </a>
+				<hr>
+            <div class="products">
+                <ul>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sualai.jpg?v=1573720306000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Mũi Hàn 500</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">25000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sp1-57698689-e2c0-429a-bf4f-3bd0f39230d8.jpg?v=1575337954000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Trạm Hàn Hakko 942 75W 200-480*C 220VAC Cực Nóng</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">129900đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                   
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/module-diy-sac-khong-day-5.jpg?v=1570011041000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module DIY Sạc Không Dây Qi IOS/Androi - Bộ phát V2</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">89000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/bo-dieu-chinh-dien-ap-sdty-200p.jpg?v=1560155769920"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Bộ Điều Chỉnh Điện Áp CHLVFU SDTY-200P 20KW 200A (BH 06 Tháng)
+                            </h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">219900đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/isd1760-thu-am-thanh-phat-am-thanh-2.jpg?v=1568951032960"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module ISD1760 Thu Âm Thanh - Phát Âm Thanh 75s</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">115000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/module-diy-sac-khong-day-5.jpg?v=1570011041000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module DIY Sạc Không Dây Qi IOS/Androi - Bộ phát V2</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">89000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+       
+      </div>
+        <section class="wrapper">
+            <br>
+				<a class="danhmuc"> Sản Phẩm Bạn Có Thể Quan Tâm </a>
+				<hr>
+            <div class="products">
+                <ul>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sualai.jpg?v=1573720306000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Mũi Hàn 500</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">25000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sp1-57698689-e2c0-429a-bf4f-3bd0f39230d8.jpg?v=1575337954000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Trạm Hàn Hakko 942 75W 200-480*C 220VAC Cực Nóng</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">129900đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                   
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/module-diy-sac-khong-day-5.jpg?v=1570011041000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module DIY Sạc Không Dây Qi IOS/Androi - Bộ phát V2</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">89000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/bo-dieu-chinh-dien-ap-sdty-200p.jpg?v=1560155769920"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Bộ Điều Chỉnh Điện Áp CHLVFU SDTY-200P 20KW 200A (BH 06 Tháng)
+                            </h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">219900đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/isd1760-thu-am-thanh-phat-am-thanh-2.jpg?v=1568951032960"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module ISD1760 Thu Âm Thanh - Phát Âm Thanh 75s</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">115000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/module-diy-sac-khong-day-5.jpg?v=1570011041000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module DIY Sạc Không Dây Qi IOS/Androi - Bộ phát V2</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">89000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+       
+        <section class="wrapper">
+            <br>
+				<a class="danhmuc"> Sản Phẩm Bạn Có Thể Quan Tâm </a>
+				<hr>
+            <div class="products">
+                <ul>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sualai.jpg?v=1573720306000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Mũi Hàn 500</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">25000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sp1-57698689-e2c0-429a-bf4f-3bd0f39230d8.jpg?v=1575337954000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Trạm Hàn Hakko 942 75W 200-480*C 220VAC Cực Nóng</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">129900đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                   
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/module-diy-sac-khong-day-5.jpg?v=1570011041000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module DIY Sạc Không Dây Qi IOS/Androi - Bộ phát V2</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">89000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/bo-dieu-chinh-dien-ap-sdty-200p.jpg?v=1560155769920"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Bộ Điều Chỉnh Điện Áp CHLVFU SDTY-200P 20KW 200A (BH 06 Tháng)
+                            </h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">219900đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/isd1760-thu-am-thanh-phat-am-thanh-2.jpg?v=1568951032960"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module ISD1760 Thu Âm Thanh - Phát Âm Thanh 75s</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">115000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/module-diy-sac-khong-day-5.jpg?v=1570011041000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module DIY Sạc Không Dây Qi IOS/Androi - Bộ phát V2</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">89000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+        <section class="wrapper">
+            <br>
+				<a class="danhmuc"> Sản Phẩm Bạn Có Thể Quan Tâm </a>
+				<hr>
+            <div class="products">
+                <ul>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sualai.jpg?v=1573720306000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Mũi Hàn 500</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">25000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sp1-57698689-e2c0-429a-bf4f-3bd0f39230d8.jpg?v=1575337954000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Trạm Hàn Hakko 942 75W 200-480*C 220VAC Cực Nóng</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">129900đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                   
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/module-diy-sac-khong-day-5.jpg?v=1570011041000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module DIY Sạc Không Dây Qi IOS/Androi - Bộ phát V2</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">89000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/bo-dieu-chinh-dien-ap-sdty-200p.jpg?v=1560155769920"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Bộ Điều Chỉnh Điện Áp CHLVFU SDTY-200P 20KW 200A (BH 06 Tháng)
+                            </h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">219900đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/isd1760-thu-am-thanh-phat-am-thanh-2.jpg?v=1568951032960"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module ISD1760 Thu Âm Thanh - Phát Âm Thanh 75s</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">115000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/module-diy-sac-khong-day-5.jpg?v=1570011041000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module DIY Sạc Không Dây Qi IOS/Androi - Bộ phát V2</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">89000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        <section class="wrapper">
+            <br>
+				<a class="danhmuc"> Sản Phẩm Bạn Có Thể Quan Tâm </a>
+				<hr>
+            <div class="products">
+                <ul>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sualai.jpg?v=1573720306000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Mũi Hàn 500</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">25000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sp1-57698689-e2c0-429a-bf4f-3bd0f39230d8.jpg?v=1575337954000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Trạm Hàn Hakko 942 75W 200-480*C 220VAC Cực Nóng</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">129900đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                   
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/module-diy-sac-khong-day-5.jpg?v=1570011041000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module DIY Sạc Không Dây Qi IOS/Androi - Bộ phát V2</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">89000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/bo-dieu-chinh-dien-ap-sdty-200p.jpg?v=1560155769920"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Bộ Điều Chỉnh Điện Áp CHLVFU SDTY-200P 20KW 200A (BH 06 Tháng)
+                            </h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">219900đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/isd1760-thu-am-thanh-phat-am-thanh-2.jpg?v=1568951032960"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module ISD1760 Thu Âm Thanh - Phát Âm Thanh 75s</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">115000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/module-diy-sac-khong-day-5.jpg?v=1570011041000"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Module DIY Sạc Không Dây Qi IOS/Androi - Bộ phát V2</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">89000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+    <footer>
+        <div class="footer">
+
+			<div class="row">
+					<div class="info">
+						
+						<ul>
+							<li><label>CHĂM SÓC KHÁCH HÀNG</label></li>
+							<li><a href="#">Khiếu Nại</a></li>
+							<li><a href="#">Tư Vấn Sản Phẩm</a></li>
+							<li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+							<li><a href="#">Hướng Dẫn Thanh Toán</a></li>
+							<Li><a href="#">Vận Chuyển</a></Li>
+							<li><a href="#">Chính Sách Bảo Hành</a></li>
+					     </ul>
+					     
+					</div>
+
+					<div class="info">
+						<ul>
+							<li><label>C2SHOP STORE INFO</label></li>
+							<li><a href="#">Giới Thiệu</a></li>
+							<li><a href="#">Chính Hãng</a></li>
+							<li><a href="#">Thanh Toán An Toàn</a></li>
+							<li><a href="#">Đối Tác</a></li>
+							<Li><a href="#">Tuyển Dụng</a></Li>
+					     </ul>
+					     
+					</div>
+
+					<div class="info">
+						<ul>
+							<li><label>KHUYẾN MÃI</label></li>
+							<li><a href="#">Flash Sales</a></li>
+							<li><a href="#">Mã Giảm Giá</a></li>
+							<li><a href="#">Chương Trình Tích Lũy</a></li>
+					     </ul>
+					     
+					</div>
+
+					<div class="info">
+						<ul>
+							<li><label>THEO DÕI CHÚNG TÔI TRÊN</label></li>
+							
+							<li>
+								<a class="fa fa-facebook-square" href="" target="_blank"></a>
+								<a href="" target="_blank">Facebook</a>
+							</li>
+							<li>
+								<a class="fa fa-instagram" href="" target="_blank"></a>
+								<a href="" target="_blank">Instagram</a>
+							</li>
+							<li>
+								<a class="fa fa-youtube-square" href="" target="_blank"></a>
+								<a href="" target="_blank">Youtube</a>
+							</li>
+					     </ul>
+					     
+					</div>
+
+					<div class="info">
+						<ul>
+							<li><label>LIÊN HỆ</label></li>
+
+							<li>
+									<a class="fa fa-paper-plane" href="" target="_blank"></a>
+									<a href="" target="_blank">Quang Nam</a>
+								</a>
+							</li>
+
+							<li>
+								<a class="fa fa-phone-square" href=""></a>
+								<a href=> 0865340954 </a>
+							</li>
+							<li>
+								<a class="fa fa-envelope" href="mailto:ltntuyen29@gmail.com?subject= Mie Store mailto&body= Wellcome!"></a>
+								<a href="mailto:ltntuyen29@gmail.com?subject= Mie Store mailto&body= Wellcome!">hason28072004@gmail.com</a>
+							</li>
+
+						</ul>
+					</div>
+
+
+				</div>
+				<hr>
+				<div class="copyright">
+					&copy;<script>document.write(new Date().getFullYear());</script> Bản quyền thuộc về <a href="index.html" target="_blank">C2shop store</a> | Admin <i class="fa fa-heart-o" aria-hidden="true"></i>  <a href="" target="_blank">HUA HA SON</a>
+				</div>
+				<br>
+
+		</div>
+    </footer>
+</body>
+
+</html>

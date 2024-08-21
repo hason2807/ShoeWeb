@@ -1,0 +1,115 @@
+
+
+/* footer */
+.footer-item {
+  padding: .5rem 2rem;
+  background: #f1df11;
+  display: flex;
+
+}
+
+.footer-item .img-footer {
+  align-items: center;
+  display: flex;
+}
+
+.footer-item .img-footer img {
+  width: 100%;
+}
+
+.footer-item .social-footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.footer-item .social-footer li a {
+  color: #000000;
+  font-size: 2rem;
+}
+
+.footer-item .social-footer li:last-child {
+  margin-left: .5rem;
+}
+
+
+/* ................ start*/
+
+.main section a.danhmuc{
+	color: gray;
+	font-weight: 300;
+	font-family: danhmuc;
+
+}
+
+.main section.loaisanpham label a.danhmuc{
+
+ 	color: white;
+ 	font-weight: 600; /*độ in đậm của chữ*/
+
+}
+/* ................end */
+
+
+/* Footer Styles */
+.footer {
+    background-color: hsla(24, 14%, 63%, 0.888);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.info a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.info a:hover {
+    color: #007bff;
+}
+
+.fa {
+    margin-right: 5px;
+}
+
+hr {
+    border-color: #ccc;
+    margin: 30px 0;
+}
+
+.copyright {
+    color: #666;
+    font-size: 14px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+/* single detail */
+#prodetails .single-pro-image{
+    width:50% ;
+    margin-right: 10px;
+}
+#prodetails {
+    display: flex;
+    margin-top: 10px;
+}
+
+#prodetails .single-pro-details{
+width: 100%;
+/* padding-top: 10px; */
+}
+#prodetails .single-pro-details h4{
+    padding: 40px  0 20px 0;
+}
+#prodetails .single-pro-details h3{
+    font-size: 2.5rem;
+    color: var(--black);
+} 
+#prodetails .single-pro-details h3 span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-decoration: line-through;
+}
+#prodetails .single-pro-details p{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    text-align: justify;
+}
+#prodetails .single-pro-details .addtocartbtn{
+    /* width: 100%;
+    height: 100%; */
+    margin: 10px;
+    display: flex;
+    
+}
+.minusBtn,.plusBtn{
+display: none;
+}
+.addtocartbtn button {
+    background-color: var(--orange); /* Màu nền nút */
+    color: #fff; /* Màu chữ trắng cho nút */
+    border: none;
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.addtocartbtn button:hover {
+    background-color: var(--dark-color); /* Màu nền nút khi di chuột qua */
+}

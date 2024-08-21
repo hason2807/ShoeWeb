@@ -1,0 +1,116 @@
+/* Reset CSS */
+body, h1, h2, p, ul, li, input, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    background-image: url("paper.gif");
+    background-color: #cccccc;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1.w3ls {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+}
+
+.content-w3ls {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+
+.content-agile1 {
+    text-align: center;
+}
+
+.content-agile2 {
+    margin-top: 30px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"],
+.form-control input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.register {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register:hover {
+    background-color: #45a049;
+}
+
+.wthree {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-agileinfo {
+    text-align: center;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.social-agileinfo li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-agileinfo li a {
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .content-w3ls {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1.w3ls {
+        font-size: 28px;
+    }
+}
+
+.social-login {
+    text-align: center;
+}
+
+.social-login i {
+    font-size: 30px; /* Điều chỉnh kích thước của biểu tượng */
+    margin: 0 10px; /* Khoảng cách giữa các biểu tượng */
+    margin-top: 20px;
+}

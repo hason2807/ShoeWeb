@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/lienhe.css">
+  <style>
+    /* Định dạng hình ảnh sản phẩm */
+    .product-img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .row{padding-top: 40px;}
+  </style>
+  <title>Sản phẩm</title>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.rjYHKlfpNiIQmUqTIGiZbQHaHa&pid=Api&P=0&h=220" alt="Logo" width="104"height="54">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-user" style="color: blue;"></i> Đăng ký</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-sign-in-alt" style="color: green;"></i> Đăng nhập</a>
+            </li>
+            <li class="nav-item">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng <span class="badge badge-primary">3</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <!-- Navigation Menu -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+        <div class="container">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sản phẩm
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Giày Nike</a>
+                  <a class="dropdown-item" href="#">Giày Sandal</a>
+                  <a class="dropdown-item" href="#">Giày Thể thao</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chi tiết sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <style>
+      .custom-navbar .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+      }
+      
+      .custom-navbar .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        text-align: center;
+      }
+      
+      .custom-navbar .navbar-brand a {
+        display: inline-block;
+        text-align: center;
+      }
+      
+      .custom-navbar .dropdown-menu {
+        text-align: center;
+      }
+      </style>
+  </header>
+  </header>
+  <!-- Thêm script JavaScript của Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="product-image">
+          <!-- Thay đổi src="path/to/image.jpg" bằng đường dẫn tới ảnh sản phẩm của bạn -->
+          <img src="./assets/img/giầy NIKE/giay-af1-x-louis-vuitton-white-brown.jpeg" class="img-fluid" alt="Sản phẩm">
+        </div>
+        <div class="product-thumbnails">
+          <div class="row">
+            <div class="col-3">
+              <img src="./assets/img/giầy NIKE/giay-nike-air-jordan-4-retro-seafoam-aq9129-103-like-auth.jpg" class="img-fluid" alt="Thumbnail 1">
+            </div>
+            <div class="col-3">
+              <img src="./assets/img/GiaySANDAL/Sandal nam nữ Yanki YY021XL.webp" class="img-fluid" alt="Thumbnail 2">
+            </div>
+            <div class="col-3">
+              <img src="./assets/img/giầySport/shoes 4.jpg" class="img-fluid" alt="Thumbnail 3">
+            </div>
+            <div class="col-3">
+              <img src="./assets/img/GiaySANDAL/Sandal nam nữ Yanki YY021XD.webp" class="img-fluid" alt="Thumbnail 4">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="product-details">
+          <h2>Shoes-af1-x-louis-vuitton-white-brown</h2>
+          <div class="rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span>(16 reviews)</span>
+          </div>
+          <p class="price">$50.00</p>
+          <p class="description">The Air Force 1 x Louis Vuitton White Brown shoes are a special collaborative product between the renowned brands Nike and Louis Vuitton. The classic Air Force 1 design is covered in a sleek white leather upper, adorned with distinctive details like the embossed fleur-de-lis and LV monogram patterns, combined with a light brown heel and tongue trim, creating an elegant and premium look for the shoes.</p>
+          <div class="form-group">
+            <label for="quantity">Số lượng:</label>
+            <input type="number" class="form-control" id="quantity" value="1" min="1">
+          </div>
+          <button class="btn btn-primary">Add to Cart</button>
+          <div class="product-info">
+            <p><strong>Availability:</strong> In Stock</p>
+            <p><strong>Shipping:</strong> 01 day shipping. Free pickup today</p>
+            <p><strong>Weight:</strong> 0.5kg</p>
+            <p><strong>Share on:</strong>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <nav>
+          <div class="nav nav-tabs" id="product-tab" role="tablist">
+            <a class="nav-item nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
+            <a class="nav-item nav-link" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information" aria-selected="false">Information</a>
+            <a class="nav-item nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews (1)</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="productTabContent">
+          <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+            <p>This is a high-end athletic shoe, designed with a sleek combination of modern style and classic lines. The shoes exude an elegant and captivating appearance, while still ensuring comfort and durability during use.</p>
+          </div>
+          <div class="tab-pane fade" id="information" role="tabpanel" aria-labelledby="information-tab">
+            <p>The shoe uppers are made from premium leather material, with meticulous stitching and intricate decorative details. The cushioned insoles are soft, breathable, providing a comfortable feel for your feet throughout the day. The non-slip and durable outsoles help you maintain a steady stride with every step.</p>
+          </div>
+          <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+            <div class="review">
+              <div class="review-header">
+                <div class="review-rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                </div>
+                <div class="review-author">by John Doe</div>
+                <div class="review-date">on 02/03/2024</div>
+              </div>
+              <div class="review-body">
+                <p>With their eye-catching design and superior quality, these shoes are sure to become an indispensable item in any fashion enthusiast's shoe collection. They are not just a fashion accessory but also a worthwhile investment for comfort and style in all daily activities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="text-center mb-4">Related Product</h2>
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="https://salt.tikicdn.com/cache/280x280/ts/product/04/39/57/c30d5ad8f7e7525ad762445fa050b0d4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Simple sandal with 3 straps</h5>
+            <p class="card-text">200000 VND</p>
+            <a href="#" class="btn btn-primary">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="https://salt.tikicdn.com/cache/280x280/ts/product/06/17/a6/44da9932df2cd12d38403779d701e2b8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sports sandal with many lines</h5>
+            <p class="card-text">200000 VND</p>
+            <a href="#" class="btn btn-primary">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="./assets/img/giầy NIKE/giay-nike-air-force-1-07-low-dark-grey-metallic-gold-5.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nike shoes have a dynamic design, many black details.</h5>
+            <p class="card-text">200000 VND</p>
+            <a href="#" class="btn btn-primary">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card h-100">
+          <img src="./assets/img/giầy NIKE/giay-nike-air-jordan-4-retro-seafoam-aq9129-103-like-auth.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Nike shoes with dynamic design, white, black, green</h5>
+            <p class="card-text">200000 VND</p>
+            <a href="#" class="btn btn-primary">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

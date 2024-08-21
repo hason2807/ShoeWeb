@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/lienhe.css">
+  <style>
+    /* Định dạng hình ảnh sản phẩm */
+    .product-img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .row{padding-top: 40px;}
+  </style>
+  <title>Sản phẩm</title>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.rjYHKlfpNiIQmUqTIGiZbQHaHa&pid=Api&P=0&h=220" alt="Logo" width="104"height="54">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-user" style="color: blue;"></i> Đăng ký</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-sign-in-alt" style="color: green;"></i> Đăng nhập</a>
+            </li>
+            <li class="nav-item">
+              <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> Giỏ hàng <span class="badge badge-primary">3</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <!-- Navigation Menu -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-navbar">
+        <div class="container">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Sản phẩm
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Giày Nike</a>
+                  <a class="dropdown-item" href="#">Giày Sandal</a>
+                  <a class="dropdown-item" href="#">Giày Thể thao</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Chi tiết sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <style>
+      .custom-navbar .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+      }
+      
+      .custom-navbar .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        text-align: center;
+      }
+      
+      .custom-navbar .navbar-brand a {
+        display: inline-block;
+        text-align: center;
+      }
+      
+      .custom-navbar .dropdown-menu {
+        text-align: center;
+      }
+      </style>
+  </header>
+  </header>
+  <!-- Thêm script JavaScript của Bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h2 style="text-align: center;" >Liên hệ với chúng tôi</h2>
+      <div class="company-info">
+        <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: 123 Nguyen Van Linh, Hai Chau District, Da Nang</p>
+        <p><i class="fas fa-envelope"></i> Email: hason200702004@gmail.com</p>
+        <p><i class="fas fa-phone"></i> Hotline: 0865340954</p>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="name">Họ và tên</label>
+          <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Nhập email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Điện thoại</label>
+          <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại">
+        </div>
+        <div class="form-group">
+          <label for="message">Nội dung</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Nhập nội dung"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Gửi liên hệ</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <div class="map-container">
+      <h2 style="text-align: center;">Bản đồ</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6753805208367!2d106.67881731474385!3d10.76893649235474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f5897c1a1b7%3A0xf6e63c3ead00acd4!2zVHLGsOG7nW5nIENhbyDEkOG6rW5nIFRp4buDdSBIb8Mz!5e0!3m2!1svi!2s!4v1680756229532!5m2!1svi!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
